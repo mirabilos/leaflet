@@ -69,6 +69,7 @@ L.Control.Layers = L.Control.extend({
 		container.setAttribute('aria-haspopup', true);
 
 		L.DomEvent.disableClickPropagation(container);
+		L.DomEvent.on(container, 'contextmenu', L.DomEvent.stopPropagation);
 		L.DomEvent.disableScrollPropagation(container);
 
 		var form = this._form = L.DomUtil.create('form', className + '-list');
