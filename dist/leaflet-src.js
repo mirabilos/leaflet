@@ -1,9 +1,12 @@
 /*
  Leaflet, a JavaScript library for mobile-friendly interactive maps. http://leafletjs.com
+ (c) 2014, 2020, 2023 mirabilos <m@mirbsd.org>
  (c) 2010-2013, Vladimir Agafonkin
  (c) 2010-2011, CloudMade
 */
+
 (function (window, document, undefined) {
+
 var oldL = window.L,
     L = {};
 
@@ -6529,11 +6532,28 @@ L.DomEvent = {
 	},
 
 	getMousePosition: function (e, container) {
+		var rect;
+
 		if (!container) {
 			return new L.Point(e.clientX, e.clientY);
 		}
 
-		var rect = container.getBoundingClientRect();
+		if (container.getBoundingClientRect) {
+			rect = container.getBoundingClientRect();
+		} else {
+			/* clumsy fallback for Opera 9 */
+			var elem = container, top = 0, left = 0;
+
+			while (elem) {
+				top = top + parseInt(elem.offsetTop);
+				left = left + parseInt(elem.offsetLeft);
+				elem = elem.offsetParent;
+			}
+			rect = {
+				'top': top,
+				'left': left
+			};
+		}
 
 		return new L.Point(
 			e.clientX - rect.left - container.clientLeft,
@@ -7645,7 +7665,19 @@ L.Map.BoxZoom = L.Handler.extend({
 		var map = this._map,
 		    layerPoint = map.mouseEventToLayerPoint(e);
 
-		if (this._startLayerPoint.equals(layerPoint)) { return; }
+		if (this._startLayerPoint.equals(layerPoint)) {
+			e._map = map;
+			e._lp = layerPoint;
+			e._fn = function () {
+				this._map.fire('contextmenu', {
+					latlng: this._map.mouseEventToLatLng(e),
+					layerPoint: this._lp,
+					originalEvent: this
+				});
+			}.bind(e);
+			window.setTimeout(e._fn, 1);
+			return;
+		}
 
 		var bounds = new L.LatLngBounds(
 		        map.layerPointToLatLng(this._startLayerPoint),
@@ -8111,7 +8143,7 @@ L.control.zoom = function (options) {
 L.Control.Attribution = L.Control.extend({
 	options: {
 		position: 'bottomright',
-		prefix: '<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>'
+		prefix: '<a href="https://leafletjs.com/" title="JS library for interactive maps">Leaflet</a>'
 	},
 
 	initialize: function (options) {
@@ -8193,7 +8225,7 @@ L.Control.Attribution = L.Control.extend({
 			prefixAndAttribs.push(this.options.prefix);
 		}
 		if (attribs.length) {
-			prefixAndAttribs.push(attribs.join(', '));
+			prefixAndAttribs.push(attribs.join(' | '));
 		}
 
 		this._container.innerHTML = prefixAndAttribs.join(' | ');
@@ -8411,13 +8443,9 @@ L.Control.Layers = L.Control.extend({
 		//Makes this work on IE10 Touch devices by stopping it from firing a mouseout event when the touch is released
 		container.setAttribute('aria-haspopup', true);
 
-		if (!L.Browser.touch) {
-			L.DomEvent
-				.disableClickPropagation(container)
-				.disableScrollPropagation(container);
-		} else {
-			L.DomEvent.on(container, 'click', L.DomEvent.stopPropagation);
-		}
+		L.DomEvent.disableClickPropagation(container);
+		L.DomEvent.on(container, 'contextmenu', L.DomEvent.stopPropagation);
+		L.DomEvent.disableScrollPropagation(container);
 
 		var form = this._form = L.DomUtil.create('form', className + '-list');
 
@@ -8543,10 +8571,17 @@ L.Control.Layers = L.Control.extend({
 
 		input.layerId = L.stamp(obj.layer);
 
-		L.DomEvent.on(input, 'click', this._onInputClick, this);
+		if (obj.layer.options._disabled) {
+			input.disabled = true;
+		} else {
+			L.DomEvent.on(input, 'click', this._onInputClick, this);
+		}
 
 		var name = document.createElement('span');
 		name.innerHTML = ' ' + obj.name;
+		if (obj.layer.options._disabled) {
+			name.style.color = '#AAAAAA';
+		}
 
 		label.appendChild(input);
 		label.appendChild(name);
