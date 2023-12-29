@@ -17,8 +17,8 @@ This tutorial will show you how to group several layers into one, and how to use
 Let's suppose you have a bunch of layers you want to combine into a group to handle them as one in your code:
 
 	var littleton = L.marker([39.61, -105.02]).bindPopup('This is Littleton, CO.'),
-		denver    = L.marker([39.74, -104.99]).bindPopup('This is Denver, CO.'),
-		aurora    = L.marker([39.73, -104.8]).bindPopup('This is Aurora, CO.'),
+	    denver    = L.marker([39.74, -104.99]).bindPopup('This is Denver, CO.'),
+	    aurora    = L.marker([39.73, -104.8]).bindPopup('This is Aurora, CO.'),
 	    golden    = L.marker([39.77, -105.23]).bindPopup('This is Golden, CO.');
 
 Instead of adding them directly to the map, you can do the following, using the <a href="https://leaflet.github.mirsolutions.de/reference.html#layergroup">LayerGroup</a> class:
@@ -34,7 +34,7 @@ Leaflet has a nice little control that allows your users control what layers the
 There are two types of layers --- base layers that are mutually exclusive (only one can be visible on your map), e.g. tile layers, and overlays --- all the other stuff you put over the base layers. In this example, we want to have two base layers (grayscale and night-style base map) to switch between, and an overlay to switch on and off --- city markers (those we created earlier). Let's create those layers and add the default ones to the map:
 
 <pre><code>var grayscale = L.tileLayer(mapboxUrl, {id: '<a href="https://mapbox.com">MapID</a>', attribution: mapboxAttribution}),
-	streets   = L.tileLayer(mapboxUrl, {id: '<a href="https://mapbox.com">MapID</a>', attribution: mapboxAttribution});
+   streets   = L.tileLayer(mapboxUrl, {id: '<a href="https://mapbox.com">MapID</a>', attribution: mapboxAttribution});
 
 var map = L.map('map', {
 	center: [39.73, -104.99],
@@ -50,7 +50,7 @@ Next, we'll create two objects. One will contain our base layers and one will co
 };
 
 var overlayMaps = {
-    "Cities": cities
+	"Cities": cities
 };</code></pre>
 
 Now, all that's left to do is to create a [Layers Control](../reference.html#control-layers) and add it to the map. The first argument passed when creating the layers control is the base layers object. The second argument is the overlays object. Both arguments are optional --- for example, you can pass just a base layers object by omitting the second argument, or just an overlays objects by passing `null` as the first argument.
