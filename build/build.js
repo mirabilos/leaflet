@@ -179,10 +179,11 @@ exports.test = function(callback) {
 
 	console.log('Running tests...');
 
-	karma.server.start(testConfig, function(exitCode) {
+	var karmaServer = new karma.Server(testConfig, function (exitCode) {
 		if (!exitCode) {
 			console.log('\tTests ran successfully.\n');
 		}
 		callback();
 	});
+	karmaServer.start();
 };
