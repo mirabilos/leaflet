@@ -154,15 +154,16 @@ L.DomEvent = {
 		} else {
 			/* clumsy fallback for Opera 9 */
 			var elem = container, top = 0, left = 0;
-			rect = {};
 
 			while (elem) {
 				top = top + parseInt(elem.offsetTop);
 				left = left + parseInt(elem.offsetLeft);
 				elem = elem.offsetParent;
 			}
-			rect["top"] = top;
-			rect["left"] = left;
+			rect = {
+				'top': top,
+				'left': left
+			};
 		}
 
 		return new L.Point(
