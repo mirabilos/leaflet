@@ -5,7 +5,12 @@ Leaflet Changelog
 
 ## 0.7.3-mirkarte (development)
 
-* … tbd
+* Fix mouse move events on Opera 9
+* Shift-Click without dragging is the same as rightclick
+* Fix layer control scrolling on (some) mobile browsers
+* Disable right-click propagation in expanded layers control as well
+* Add support for disabling layers
+* Join multiple attributions in a consistent manner
 
 ## 0.7.3 (May 2014, 23)
 
