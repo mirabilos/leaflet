@@ -175,16 +175,6 @@ Ready-to-go basemaps, with little or no configuration at all.
 			<a href="https://github.com/geosensorweblab">GeoSensorWeb Lab</a>
 		</td>
 	</tr>
-	<tr>
-		<td>
-			<a href="https://github.com/gmaclennan/leaflet-bing-layer">Bing Maps Layer</a>
-		</td><td>
-			Add <a href="https://msdn.microsoft.com/en-us/library/ff701721.aspx">Bing Maps tiles</a> to your Leaflet Map. Requires Leaflet v1.0.0.beta.2 or later.
-		</td><td>
-			<a href="https://github.com/gmaclennan">Gregor MacLennan</a>
-		</td>
-	</tr>
-
 </table>
 
 
@@ -2300,33 +2290,6 @@ These plugins extend Leaflet event handling.
 		<td>
 			<a href="http://glat.info">Guillaume Lathoud</a>
 		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="https://github.com/MazeMap/Leaflet.singleclick">singleclick</a>
-		</td>
-		<td>
-			Extend <code>L.Evented</code> to fire a <code>singleclick</code> event (<a href="https://mazemap.github.io/Leaflet.singleclick/">demo</a>). Compatible with Leaflet 1.0.0-beta1 and greater only.
-		</td><td>
-			<a href="https://github.com/IvanSanchez">Iván Sánchez Ortega</a>,
-			<a href="https://github.com/MazeMap">MazeMap</a>
-		</td>
-	</tr>
-
-	<tr>
-	        <td>
-	            <a href="https://github.com/MazeMap/Leaflet.VisualClick">Leaflet.VisualClick</a>
-	        </td>
-	        <td>
-	            Adds visual feedback when user clicks/taps the map (<a href="https://github.com/MazeMap/Leaflet.VisualClick/">demo</a>).
-	            Useful when further action is delayed by server requests, or implementation of Leaflet.singleclick.
-	            Or just because it looks cool :)
-	            Only tested with Leaflet 1.0.0-beta1.
-	        </td><td>
-	            <a href="https://github.com/dagjomar">Dag Jomar Mersland</a>,
-	            <a href="https://github.com/IvanSanchez">Iván Sánchez Ortega</a>,
-	            <a href="https://github.com/MazeMap">MazeMap</a>
-	        </td>
 	</tr>
 </table>
 

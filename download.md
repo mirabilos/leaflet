@@ -6,37 +6,7 @@ bodyclass: download-page
 
 ## Download Leaflet
 
-<table>
-	<tr>
-		<th>Version</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td class="width100"><a href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.zip">Leaflet 0.7.7</a></td>
-		<td>Stable version, released on November 18, 2013 and last updated on October 26, 2015.</td>
-	</tr>
-	<tr>
-		<td><a href="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.zip">Leaflet 1.0 beta 2</a></td>
-		<td>Last 1.0 beta, released on October 14, 2015.</td>
-	</tr>
-	<tr>
-		<td><a href="https://leafletjs-cdn.s3.amazonaws.com/content/leaflet/master/leaflet.zip">Leaflet 1.0-dev</a></td>
-		<td>In-progress version, developed on the <code>master</code> branch.</td>
-	</tr>
-</table>
-
-[View Changelog](https://github.com/Leaflet/Leaflet/blob/master/CHANGELOG.md)
-
-Note that the master version can contain incompatible changes,
-so please read the changelog carefully when upgrading to it.
-
-### Using a Hosted Version of Leaflet
-
-The latest stable Leaflet release is hosted on a CDN &mdash; to start using
-it straight away, place this in the `head` of your HTML code:
-
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+(removed, since this repository only documents the v0.7.x used by MirKarte)
 
 ### Using a Downloaded Version of Leaflet
 
