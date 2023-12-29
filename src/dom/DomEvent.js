@@ -143,15 +143,18 @@ L.DomEvent = {
 	},
 
 	getMousePosition: function (e, container) {
+		var rect;
+
 		if (!container) {
 			return new L.Point(e.clientX, e.clientY);
 		}
 
 		if (container.getBoundingClientRect) {
-			var rect = container.getBoundingClientRect();
+			rect = container.getBoundingClientRect();
 		} else {
 			/* clumsy fallback for Opera 9 */
-			var rect = {}, top = 0, left = 0, elem = container;
+			var elem = container, top = 0, left = 0;
+			rect = {};
 
 			while (elem) {
 				top = top + parseInt(elem.offsetTop);
