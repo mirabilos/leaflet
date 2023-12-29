@@ -19,11 +19,11 @@ Before writing any code for the map, you need to do the following preparation st
 
  * Include Leaflet CSS file in the head section of your document:
 
-		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+		<link rel="stylesheet" href="leaflet/leaflet.css" />
 
  * Include Leaflet JavaScript file:
 
-		<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+		<script src="leaflet/leaflet.js"></script>
 
  * Put a `div` element with a certain `id` where you want your map to be:
 
@@ -49,7 +49,7 @@ By default (as we didn't pass any options when creating the map instance), all m
 
 Note that `setView` call also returns the map object --- most Leaflet methods act like this when they don't return an explicit value, which allows convenient jQuery-like method chaining.
 
-Next we'll add a tile layer to add to our map, in this case it's a Mapbox Streets tile layer. Creating a tile layer usually involves setting the [URL template](http://leafletjs.com/reference.html#url-template) for the tile images (get yours at [Mapbox](http://mapbox.com)), the attribution text and the maximum zoom level of the layer:
+Next we'll add a tile layer to add to our map, in this case it's a Mapbox Streets tile layer. Creating a tile layer usually involves setting the [URL template](https://leaflet.github.mirsolutions.de/reference.html#url-template) for the tile images (get yours at [Mapbox](http://mapbox.com)), the attribution text and the maximum zoom level of the layer:
 
 <pre><code class="javascript">L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
 	attribution: 'Map data &amp;copy; <span class="text-cut" data-cut="[&hellip;]">&lt;a href="http://openstreetmap.org"&gt;OpenStreetMap&lt;/a&gt; contributors, &lt;a href="http://creativecommons.org/licenses/by-sa/2.0/"&gt;CC-BY-SA&lt;/a&gt;, Imagery &copy; &lt;a href="http://mapbox.com"&gt;Mapbox&lt;/a&gt;</span>',
