@@ -70,7 +70,7 @@ npm install -g jake
 npm install
 ```
 
-You can build minified Leaflet by running `jake` (it will be built from source in the `dist` folder).
+You can build minified Leaflet by running `jake` (it will be built from source in the `dist` folder). (Or use `npm run make` if you did not install jake globally.)
 For a custom build with selected components, open `build/build.html` in the browser and follow the instructions from there.
 
 ### Making Changes to Leaflet Source
@@ -100,7 +100,7 @@ install [PhantomJS](http://phantomjs.org/) (and make sure it's in your `PATH`),
 then run:
 
 ```
-jake test
+jake test    # or: npm run test
 ```
 
 To run all the tests in actual browsers at the same time, you can do:
