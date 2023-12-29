@@ -8558,6 +8558,7 @@ L.Control.Layers = L.Control.extend({
 	_addItem: function (obj) {
 		var label = document.createElement('label'),
 		    input,
+		    isDisabled,
 		    checked = this._map.hasLayer(obj.layer);
 
 		if (obj.overlay) {
@@ -8571,7 +8572,8 @@ L.Control.Layers = L.Control.extend({
 
 		input.layerId = L.stamp(obj.layer);
 
-		if (obj.layer.options._disabled) {
+		isDisabled = obj.layer.options && obj.layer.options._disabled;
+		if (isDisabled) {
 			input.disabled = true;
 		} else {
 			L.DomEvent.on(input, 'click', this._onInputClick, this);
@@ -8579,7 +8581,7 @@ L.Control.Layers = L.Control.extend({
 
 		var name = document.createElement('span');
 		name.innerHTML = ' ' + obj.name;
-		if (obj.layer.options._disabled) {
+		if (isDisabled) {
 			name.style.color = '#AAAAAA';
 		}
 
