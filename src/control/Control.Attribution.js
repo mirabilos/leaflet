@@ -5,7 +5,7 @@
 L.Control.Attribution = L.Control.extend({
 	options: {
 		position: 'bottomright',
-		prefix: '<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>'
+		prefix: '<a href="https://leafletjs.com/" title="JS library for interactive maps">Leaflet</a>'
 	},
 
 	initialize: function (options) {
