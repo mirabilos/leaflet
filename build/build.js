@@ -79,7 +79,7 @@ function combineFiles(files) {
 }
 
 function bytesToKB(bytes) {
-    return (bytes / 1024).toFixed(2) + ' KB';
+    return (bytes / 1024).toFixed(2) + ' KiB';
 };
 
 exports.build = function (callback, compsBase32, buildName) {

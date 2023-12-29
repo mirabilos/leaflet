@@ -29,5 +29,8 @@
   "keywords": [
     "gis",
     "map"
-  ]
+  ],
+  "dependencies": {
+    "phantomjs": "^1.9.7-15"
+  }
 }
