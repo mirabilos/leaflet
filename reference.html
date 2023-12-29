@@ -6389,8 +6389,8 @@ for (var i = 0, len = tables.length; i < len; i++) {
             tds[j].parentNode.id = id + '-' + (tds[j].textContent || tds[j].innerText).split('(')[0].toLowerCase();
 
             tds[j].parentNode.onclick = function(e) {
-            	if (e.offsetX < 0) {
-                	window.location.hash = '#' + this.id;
+                if (e.offsetX < 0) {
+                    window.location.hash = '#' + this.id;
                 }
             };
         }

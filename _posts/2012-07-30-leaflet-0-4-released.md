@@ -13,9 +13,9 @@ After 5.5 months of development with [33 contributors](https://github.com/Leafle
 Leaflet 0.4 contains several API improvements that allow you to write simpler, terser code ([jQuery](http://jquery.com)-like), while being backwards compatible with the previous approach (so that you can use both styles).
 
 	L.marker([51.5, -0.09])
-    	.addTo(map)
-    	.bindPopup('Hello world!')
-    	.openPopup();
+	.addTo(map)
+	.bindPopup('Hello world!')
+	.openPopup();
 
 First, Leaflet methods now accept [LatLng][], [LatLngBounds][], [Point][] and [Bounds][] objects in a simple array form, so you don't need to always create them explicitly:
 
