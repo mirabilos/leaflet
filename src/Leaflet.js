@@ -1,4 +1,3 @@
-
 var oldL = window.L,
     L = {};
 
