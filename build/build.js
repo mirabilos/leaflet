@@ -111,7 +111,7 @@ exports.build = function (callback, compsBase32, buildName) {
 	    newCompressed = copy + UglifyJS.minify(newSrc, {
 	        warnings: true,
 	        fromString: true
-	    }).code,
+	    }).code + '\n',
 	    delta = getSizeDelta(newCompressed, oldCompressed);
 
 	console.log('\tCompressed: ' + bytesToKB(newCompressed.length) + delta);
