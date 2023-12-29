@@ -235,7 +235,6 @@ h3.tagline {
 }
 .container pre code {
 	font-size: 14px;
-	padding: .75em 1em;
 	border-radius: 5px;
 	white-space: pre;
 	overflow: auto;
