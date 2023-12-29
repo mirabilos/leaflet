@@ -103,8 +103,8 @@ L.Map.BoxZoom = L.Handler.extend({
 					latlng: this._map.mouseEventToLatLng(e),
 					layerPoint: this._lp,
 					originalEvent: this
-				    });
-			    }.bind(e);
+				});
+			}.bind(e);
 			window.setTimeout(e._fn, 1);
 			return;
 		}
