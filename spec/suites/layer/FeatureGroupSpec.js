@@ -1,4 +1,4 @@
-﻿describe('FeatureGroup', function () {
+describe('FeatureGroup', function () {
 	var map;
 	beforeEach(function () {
 		map = L.map(document.createElement('div'));

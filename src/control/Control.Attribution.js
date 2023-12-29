@@ -23,7 +23,7 @@ L.Control.Attribution = L.Control.extend({
 				this.addAttribution(map._layers[i].getAttribution());
 			}
 		}
-		
+
 		map
 		    .on('layeradd', this._onLayerAdd, this)
 		    .on('layerremove', this._onLayerRemove, this);

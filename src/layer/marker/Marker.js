@@ -124,7 +124,7 @@ L.Marker = L.Class.extend({
 			if (options.title) {
 				icon.title = options.title;
 			}
-			
+
 			if (options.alt) {
 				icon.alt = options.alt;
 			}

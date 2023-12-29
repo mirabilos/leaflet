@@ -96,4 +96,3 @@ L.latLng = function (a, b) { // (LatLng) or ([Number, Number]) or (Number, Numbe
 	}
 	return new L.LatLng(a, b);
 };
-

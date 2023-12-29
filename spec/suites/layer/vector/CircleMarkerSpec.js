@@ -1,4 +1,4 @@
-﻿describe('CircleMarker', function () {
+describe('CircleMarker', function () {
 	describe("#_radius", function () {
 		var map;
 		beforeEach(function () {

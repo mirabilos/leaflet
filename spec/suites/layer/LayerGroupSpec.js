@@ -1,4 +1,4 @@
-﻿describe('LayerGroup', function () {
+describe('LayerGroup', function () {
 	describe("#addLayer", function () {
 		it('adds a layer', function () {
 			var lg = L.layerGroup(),
