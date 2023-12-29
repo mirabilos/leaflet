@@ -26,10 +26,10 @@ describe("Control.Attribution", function () {
 			expect(container.innerHTML).to.eql('prefix | foo');
 		});
 
-		it('adds several attributions listed with comma', function () {
+		it('adds several attributions listed with pipe', function () {
 			control.addAttribution('foo');
 			control.addAttribution('bar');
-			expect(container.innerHTML).to.eql('prefix | foo, bar');
+			expect(container.innerHTML).to.eql('prefix | foo | bar');
 		});
 	});
 
