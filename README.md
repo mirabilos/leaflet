@@ -1,8 +1,10 @@
-<img src="http://leafletjs.com/docs/images/logo.png" alt="Leaflet" />
+<img src="https://leaflet.github.mirsolutions.de/docs/images/logo.png" alt="Leaflet" />
 
 Leaflet is an open source JavaScript library for **mobile-friendly interactive maps**.
 It is developed by [Vladimir Agafonkin][] of [MapBox][] with a team of dedicated [contributors][].
 Weighing just about 30 KB of gzipped JS code, it has all the [features][] most developers ever need for online maps.
+
+[Documentation for the 0.7.x branch here](https://leaflet.github.mirsolutions.de/reference.html)
 
 Leaflet is designed with *simplicity*, *performance* and *usability* in mind.
 It works efficiently across all major desktop and mobile platforms out of the box,
@@ -18,8 +20,6 @@ We're happy to meet new contributors.
 If you want to **get involved** with Leaflet development, check out the [contribution guide][contribute].
 Let's make the best mapping library that will ever exist,
 and push the limits of what's possible with online maps!
-
-[![Build Status](https://travis-ci.org/Leaflet/Leaflet.png?branch=master)](https://travis-ci.org/Leaflet/Leaflet)
 
  [Vladimir Agafonkin]: http://agafonkin.com/en
  [contributors]: https://github.com/Leaflet/Leaflet/graphs/contributors
