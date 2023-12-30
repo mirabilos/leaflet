@@ -34,7 +34,7 @@ Leaflet has a nice little control that allows your users control what layers the
 There are two types of layers --- base layers that are mutually exclusive (only one can be visible on your map), e.g. tile layers, and overlays --- all the other stuff you put over the base layers. In this example, we want to have two base layers (grayscale and night-style base map) to switch between, and an overlay to switch on and off --- city markers (those we created earlier). Let's create those layers and add the default ones to the map:
 
 <pre><code>var grayscale = L.tileLayer(mapboxUrl, {id: '<a href="https://mapbox.com">MapID</a>', attribution: mapboxAttribution}),
-   streets   = L.tileLayer(mapboxUrl, {id: '<a href="https://mapbox.com">MapID</a>', attribution: mapboxAttribution});
+    streets   = L.tileLayer(mapboxUrl, {id: '<a href="https://mapbox.com">MapID</a>', attribution: mapboxAttribution});
 
 var map = L.map('map', {
 	center: [39.73, -104.99],
@@ -66,12 +66,12 @@ Now let's [view the result on a separate page &rarr;](layers-control-example.htm
 <script>
 	var cities = new L.LayerGroup();
 
-    L.marker([39.61, -105.02]).bindPopup('This is Littleton, CO.').addTo(cities),
+	L.marker([39.61, -105.02]).bindPopup('This is Littleton, CO.').addTo(cities),
 	L.marker([39.74, -104.99]).bindPopup('This is Denver, CO.').addTo(cities),
 	L.marker([39.73, -104.8]).bindPopup('This is Aurora, CO.').addTo(cities),
 	L.marker([39.77, -105.23]).bindPopup('This is Golden, CO.').addTo(cities);
 
-    var grayscale = L.tileLayer(MB_URL, {attribution: MB_ATTR, id: 'mapbox.light'}),
+	var grayscale = L.tileLayer(MB_URL, {attribution: MB_ATTR, id: 'mapbox.light'}),
 	    streets = L.tileLayer(MB_URL, {attribution: MB_ATTR, id: 'mapbox.streets'});
 
 	var map = L.map('map', {

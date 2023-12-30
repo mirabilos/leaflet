@@ -148,7 +148,7 @@ Ready-to-go basemaps, with little or no configuration at all.
 			<a href="https://github.com/aparshin">Alexander Parshin</a>
 		</td>
 	</tr>
-        <tr>
+	<tr>
 		<td>
 			<a href="https://github.com/knreise/L.TileLayer.Kartverket">L.TileLayer.Kartverket</a>
 		</td><td>
@@ -533,7 +533,7 @@ The following plugins provide new ways of loading overlay data (GIS vector data)
 Load your own data from various GIS formats.
 
 <table class="plugins"><tr><th>Plugin</th><th>Description</th><th>Maintainer</th></tr>
-    <tr>
+	<tr>
 		<td>
 			<a href="https://github.com/mapbox/leaflet-omnivore">leaflet-omnivore</a>
 		</td><td>
@@ -736,7 +736,7 @@ Load overlay data from third-party-services. See also [basemap providers](#basem
 		<td>
 			<a href="https://github.com/kartenkarsten/leaflet-layer-overpass/">Leaflet Layer Overpass</a>
 		</td><td>
-      Easily include data from the <a href="http://overpass-api.de">overpass api</a>.
+			Easily include data from the <a href="http://overpass-api.de">overpass api</a>.
 		</td><td>
 			<a href="https://github.com/kartenkarsten">kartenkarsten</a>
 		</td>
@@ -1011,15 +1011,15 @@ These plugins provide new markers or news ways of converting abstract data into 
 			<a href="http://timwis.com">Tim Wisniewski</a>
 		</td>
 	</tr>
-        <tr>
-                <td>
-                        <a href="https://github.com/lethexa/leaflet-tracksymbol">leaflet-tracksymbol</a>
-                </td><td>
-                        This marker provides a tracksymbol with orientation, velocity-vector and configurable shape.
-                </td><td>
-                        <a href="https://github.com/lethexa">Tim Leerhoff</a>
-                </td>
-        </tr>
+	<tr>
+		<td>
+			<a href="https://github.com/lethexa/leaflet-tracksymbol">leaflet-tracksymbol</a>
+		</td><td>
+			This marker provides a tracksymbol with orientation, velocity-vector and configurable shape.
+		</td><td>
+			<a href="https://github.com/lethexa">Tim Leerhoff</a>
+		</td>
+	</tr>
 </table>
 
 
@@ -1847,7 +1847,7 @@ Change the way the user can interactively move around the map.
 			<a href="https://github.com/zverik">Ilya Zverev</a>
 		</td>
 	</tr>
-  <tr>
+	<tr>
 		<td>
 			<a href="https://github.com/GhostGroup/Leaflet.DoubleRightClickZoom">Leaflet.DoubleRightClickZoom</a>
 		</td><td>
@@ -1935,7 +1935,7 @@ Change the way the user is moved around the map, by jumping to predefined/stored
 		</td>
 	</tr>
 	<tr>
-        <td>
+		<td>
 			<a href="https://github.com/florpor/Leaflet.ShowAll">Leaflet.ShowAll</a>
 		</td><td>
 			A control that can show a predefined extent while saving the current one so it can be jumped back to.

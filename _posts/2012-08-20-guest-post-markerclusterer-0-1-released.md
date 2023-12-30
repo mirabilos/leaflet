@@ -34,7 +34,7 @@ The clusterer has all sorts of great built in behaviour:
 
 Using the Marker Clusterer is easy, just replace your existing [LayerGroup](../../../examples/layers-control.html) usage with an `L.MarkerClusterGroup`:
 
-    var markers = new L.MarkerClusterGroup();
+	var markers = new L.MarkerClusterGroup();
 
 	markers.addLayer(L.marker([175.3107, -37.7784]));
 	// add more markers here...
@@ -92,7 +92,7 @@ Dave Leaver.
 
 <script>
 	var mapbox = new L.TileLayer(MB_URL, {maxZoom: 18, attribution: MB_ATTR, id: 'examples.map-i875mjb7'}),
-		latlng = new L.LatLng(-37.820, 175.217);
+	    latlng = new L.LatLng(-37.820, 175.217);
 
 	var map = new L.Map('map', {center: latlng, zoom: 15, layers: [mapbox]});
 

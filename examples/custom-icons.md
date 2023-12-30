@@ -30,8 +30,8 @@ Note that the white area in the images is actually transparent.
 Marker icons in Leaflet are defined by [L.Icon](../reference.html#icon) objects, which are passed as an option when creating markers. Let's create a green leaf icon:
 
 	var greenIcon = L.icon({
-		iconUrl: 'leaf-green.png',
-		shadowUrl: 'leaf-shadow.png',
+		iconUrl:      'leaf-green.png',
+		shadowUrl:    'leaf-shadow.png',
 
 		iconSize:     [38, 95], // size of the icon
 		shadowSize:   [50, 64], // size of the shadow
@@ -52,7 +52,7 @@ What if we need to create several icons that have lots in common? Let's define o
 
 	var LeafIcon = L.Icon.extend({
 		options: {
-			shadowUrl: 'leaf-shadow.png',
+			shadowUrl:    'leaf-shadow.png',
 			iconSize:     [38, 95],
 			shadowSize:   [50, 64],
 			iconAnchor:   [22, 94],
@@ -64,8 +64,8 @@ What if we need to create several icons that have lots in common? Let's define o
 Now we can create all three of our leaf icons from this class and use them:
 
 	var greenIcon = new LeafIcon({iconUrl: 'leaf-green.png'}),
-		redIcon = new LeafIcon({iconUrl: 'leaf-red.png'}),
-		orangeIcon = new LeafIcon({iconUrl: 'leaf-orange.png'});
+	      redIcon = new LeafIcon({iconUrl: 'leaf-red.png'}),
+	   orangeIcon = new LeafIcon({iconUrl: 'leaf-orange.png'});
 
 You may have noticed that we used the `new` keyword for creating LeafIcon instances. So why do all Leaflet classes get created without it? The answer is simple: the real Leaflet classes are named with a capital letter (e.g. `L.Icon`), and they also need to be created with `new`, but there are also shortcuts with lowercase names (`L.icon`), created for convenience like this:
 
