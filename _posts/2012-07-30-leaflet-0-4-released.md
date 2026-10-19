@@ -2,7 +2,7 @@
 layout: post
 title: Leaflet 0.4 Released
 description: After 5.5 months of development with 33 contributors involved, I'm proud to announce the release of Leaflet 0.4! It comes with a simpler API and <em>lots</em> of great improvements, along with a major update to documentation, a plugins page and the launch of the developer blog.
-author: Vladimir Agafonkin
+author: Volodymyr Agafonkin
 authorsite: http://agafonkin.com/en
 ---
 
@@ -188,7 +188,7 @@ Special thanks go to [Dave Leaver][] for his inspiring contributions including i
 And, of course, thanks to my amazing company, [CloudMade](http://cloudmade.com), for embracing open source and supporting this development.
 
 Sincerely, <br />
-Vladimir Agafonkin, Leaflet maintainer.
+Volodymyr Agafonkin, Leaflet maintainer.
 
  [LatLng]: ../../../reference.html#latlng
  [LatLngBounds]: ../../../reference.html#latlngbounds

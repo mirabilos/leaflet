@@ -2,7 +2,7 @@
 layout: post
 title: Leaflet 0.4.3 and a New Tutorial
 description: Leaflet 0.4.3 released with several bugfixes and improvements, and comes with a new tutorial on creating a colorful interactive choropleth map.
-author: Vladimir Agafonkin
+author: Volodymyr Agafonkin
 authorsite: http://agafonkin.com/en
 ---
 
@@ -44,4 +44,4 @@ Grab the new Leaflet 0.4.3 at the [download page](../../../download.html). Enjoy
  * Improved retina detection for `TileLayer` `detectRetina` option (by [@sxua](https://github.com/sxua)). [#854](https://github.com/Leaflet/Leaflet/issues/854)
 
 Sincerely, <br />
-Vladimir Agafonkin, Leaflet maintainer.
+Volodymyr Agafonkin, Leaflet maintainer.

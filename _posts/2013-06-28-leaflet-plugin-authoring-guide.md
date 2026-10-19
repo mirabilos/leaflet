@@ -2,7 +2,7 @@
 layout: post
 title: Leaflet Plugin Authoring Guide
 description: A number of best practices and tips for publishing your own perfect Leaflet plugin
-author: Vladimir Agafonkin
+author: Volodymyr Agafonkin
 authorsite: http://agafonkin.com/en
 ---
 
@@ -108,4 +108,4 @@ If you have a lot of arguments in your function, consider accepting an options o
 And most importantly, keep it simple. Leaflet is all about *simplicity*.
 
 Cheers,<br>
-Vladimir.
+Volodymyr.

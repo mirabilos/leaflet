@@ -2,7 +2,7 @@
 layout: post
 title: Leaflet 0.4.5 Bugfix Release and Plans for 0.5
 description: Leaflet 0.4.5 released, containing a small but important zoom animation bugfix for upcoming Chrome 23+ (currently beta) and IE10. Work on future 0.5 release goes on!
-author: Vladimir Agafonkin
+author: Volodymyr Agafonkin
 authorsite: http://agafonkin.com/en
 ---
 
@@ -33,4 +33,4 @@ Leaflet is a true open source project, so we're always happy to meet new contrib
 Thanks to everyone! Leaflet has got quite an amazing community which makes me really proud. Keep it up!
 
 Cheers,<br />
-Vladimir, Leaflet author and maintainer.
+Volodymyr, Leaflet author and maintainer.

@@ -2,7 +2,7 @@
 layout: post
 title: Leaflet 0.5 Released
 description: Leaflet 0.5 released &mdash; with IE10 touch support, retina-enabled markers, better panning inertia, new zoom control and about a hundred of other improvements and bugfixes!
-author: Vladimir Agafonkin
+author: Volodymyr Agafonkin
 authorsite: http://agafonkin.com/en
 ---
 
@@ -21,4 +21,4 @@ Thanks to everyone! It's absolutely breathtaking to see what the Leaflet communi
 P.S. I also heard in a dream that everyone who tweets about the new Leaflet release will get an incredible luck boost for the next month. Sounds like true to me.
 
 Cheers,<br />
-Vladimir, Leaflet creator and maintainer.
+Volodymyr, Leaflet creator and maintainer.

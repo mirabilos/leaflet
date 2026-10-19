@@ -70,7 +70,7 @@ These clusters are stored in a tree (A cluster contains its child clusters) with
 
 #### L.DistanceGrid
 
-`L.DistanceGrid` provides some nice optimization when clustering (contributed by [Vladimir](http://agafonkin.com/en/), Leaflet maintainer).
+`L.DistanceGrid` provides some nice optimization when clustering (contributed by [Volodymyr](http://agafonkin.com/en/), Leaflet maintainer).
 
 To cluster the markers, we need to compare every marker with every other marker to try form a cluster.
 To make this quicker, we need reduce the set of markers we need to compare with. `DistanceGrid` does this by putting all markers on a grid sized the same as the distance we need to search. Then, when looking for a marker to cluster with, we only need to look at markers in the grid square we are in and its immediate neighbours. This can be quite a big performance win as we only look at markers that we are likely to form a cluster with. (<a href="https://github.com/danzel/Leaflet.markercluster/pull/29">check out the initial PR for numbers</a>)

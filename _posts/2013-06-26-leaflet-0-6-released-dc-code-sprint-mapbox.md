@@ -2,7 +2,7 @@
 layout: post
 title: Leaflet 0.6 Released, Code Sprint in DC with MapBox
 description: Leaflet 0.6 released &mdash; with nicer controls, better usability and tons of API improvements and various bugfixes &mdash; more than 120 changes! The first ever Leaflet Code Sprint happening in Washington, DC with the MapBox team
-author: Vladimir Agafonkin
+author: Volodymyr Agafonkin
 authorsite: http://agafonkin.com/en
 ---
 
@@ -28,4 +28,4 @@ Grab the CDN links or downloads for the new release on the [download page](../..
 P.S. Everyone who tweets/posts about the new Leaflet release or why he loves Leaflet over the next few days will get a karma boost of over 9000 points. I heard that from a passing monk in Georgetown yesterday, true story!
 
 Cheers,<br />
-Vladimir, Leaflet creator and maintainer.
+Volodymyr, Leaflet creator and maintainer.
